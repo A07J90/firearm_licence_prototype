@@ -1,0 +1,52 @@
+{{<layout}}
+
+{{$content}}
+<main id="content" role="main">
+  <a class="link-back" href="/examples/">Back to the GOV.UK prototype kit examples</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+    <form>
+        <h1 class="heading-large">
+          Have you ever recieved treatment for depression or any other kind of mental health condition? 
+        </h1>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">
+              Do you have any medical conditions? 
+            </legend>
+
+            <label class="block-label" for="radio-home-address" >
+              <input id="radio-home-address" type="radio" name="radio-indent-group" value="Yes">
+              No
+            </label>
+
+            <label class="block-label" for="radio-other-address" data-target="example-other-address">
+              <input id="radio-other-address" type="radio" name="radio-indent-group" value="No">
+              Yes
+            </label>
+
+            <div class="panel-indent js-hidden" id="example-other-address">
+
+              <label class="form-label-bold" for="full-name">Please specify</label>
+              <p class="form-hint">For example, schizophrenia.</p>
+              <input class="form-control" id="full-name-f1" type="text">
+
+            </div>
+          </fieldset>
+        </div>
+      
+      <div class="form-group">
+        <a href="/medical-gp-details" class="button">Continue</a>
+      </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/layout}}

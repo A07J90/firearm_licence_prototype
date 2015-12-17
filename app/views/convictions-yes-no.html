@@ -1,0 +1,79 @@
+{{<layout}}
+
+{{$content}}
+<main id="content" role="main">
+  <a class="link-back" href="/examples/">Back to the GOV.UK prototype kit examples</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+    <form>
+        <h1 class="heading-large">
+          Have you been convicted of any offences?
+        </h1>
+
+        <p>These includes motoring offences, binding overs, formal written warnings, cautions and convictions in and outside Great Britain.</p>
+
+        <div class="panel-indent">
+          <p>
+            Parking offences and fixed penalty notices are not checked when deciding to grant or refuse a firearm licence. 
+          </p>
+        </div>
+
+        <p></p>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">
+              Have you been convicted of any offences?
+            </legend>
+
+            <label class="block-label" for="radio-home-address" >
+              <input id="radio-home-address" type="radio" name="radio-indent-group" value="Yes">
+              No
+            </label>
+
+            <label class="block-label" for="radio-other-address" data-target="example-other-address">
+              <input id="radio-other-address" type="radio" name="radio-indent-group" value="No">
+              Yes
+            </label>
+
+            <div class="panel-indent js-hidden" id="example-other-address">
+
+              <div class="form-group">
+                <label class="form-label-bold" for="full-name">Please provide details</label>
+                <p class="form-hint">For example, assault, 2011, Leeds</p>
+
+                <p></p>
+                <div class="form-group">
+                  <label class="form-label-bold" for="full-name">Offence</label>
+                  <input type="text" class="form-control" id="full-name">
+                </div>
+
+                <p></p>
+                <div class="form-group">
+                  <label class="form-label-bold" for="full-name">Year</label>
+                  <input type="text" class="form-control" id="full-name">
+                </div>
+
+                <p></p>
+                <div class="form-group">
+                  <label class="form-label-bold" for="full-name">Location</label>
+                  <input type="text" class="form-control" id="full-name">
+                </div>
+                    
+            </div>
+          </fieldset>
+        </div>
+      <div class="form-group">
+        <input class="button" type="submit" value="Continue">
+      </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/layout}}

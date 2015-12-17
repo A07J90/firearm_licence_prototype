@@ -1,0 +1,67 @@
+{{<layout}}
+
+{{$pageTitle}}Question page{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/start-page">Back</a>
+
+      <h2 class="heading-large">
+          What types of shotgun are you wanting to possess and use? 
+      </h2>
+
+
+      <form class="form">
+
+        <fieldset>
+
+            <legend class="visuallyhidden">What is your nationality?</legend>
+
+            <label for="nationality_irish" class="block-label">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              A shotgun, smooth bore gun
+            </label>
+
+            <label for="nationality_irish" class="block-label">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              A shoutgun, having barrell not less than 24" (60.96cm) and bore less than 2" (5.08cm)
+            </label>
+
+            <label for="nationality_irish" class="block-label">
+              <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+              A shoutgun, either having no magazine, or a non-detachable magazine incapable of holding more than two cartridges
+            </label>
+
+            <label for="nationality_other" class="block-label" data-target="example_nationality_other">
+              <input type="checkbox" name="nationality_other" value="Wales" id="nationality_other" aria-controls="example_nationality_other" aria-expanded="false">
+             Firearm not on this list
+            </label>
+
+            <div class="panel-indent js-hidden" id="example_nationality_other" aria-hidden="true">
+              <label for="nationality_other_countries" class="form-label">
+                Please specify
+              </label>
+              <input class="form-control" type="text" id="nationality_other_countries">
+            </div>
+
+          </fieldset>
+
+        <p></p>
+
+        <div class="form-group">
+          <a href="routing-referees-suitable" class="button">Continue</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{{/content}}
+
+{{/layout}}

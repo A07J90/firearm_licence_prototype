@@ -1,0 +1,93 @@
+{{<layout}}
+
+{{$content}}
+<main id="content" role="main">
+  <a class="link-back" href="/examples/">Back to the GOV.UK prototype kit examples</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h1 class="heading-xlarge">
+          Referees for application
+        </h1>
+
+        <p class="">
+          When applying for a firearm certificate, you should have gained the permission of two people who have agreed to act as referees for you  
+        </p>
+
+        <!-- Known longer than two years? -->
+        <h2 class="heading-large">
+          Have you known both your referees longer than two years?
+        </h2>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">
+              Have you known both your referees longer than two years?
+            </legend>
+
+            <label class="block-label" for="radio-other-address" data-target="more-than-two-years">
+              <input id="radio-other-address" type="radio" name="radio-indent-group" value="Yes">
+              Yes
+            </label>
+
+            <label class="block-label" for="radio-other-address" data-target="less-than-two-years">
+              <input id="radio-other-address" type="radio" name="radio-indent-group" value="No">
+              No
+            </label>
+
+            <div class="panel-indent js-hidden" id="less-than-two-years">
+              <h2 class="heading-medium">
+                Your referees must have known you personally for at least two years.
+              </h2>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <!-- British resident -->
+        <h2 class="heading-large">
+          Are both your referees resident in Great Britain?
+        </h2>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">
+              Is your first referee resident in Great Britain?
+            </legend>
+
+            <label class="block-label" for="radio-other-address" data-target="British-resident-yes">
+              <input id="radio-british-resident" type="radio" name="radio-indent" value="Yes">
+              Yes
+            </label>
+
+            <label class="block-label" for="radio-other-address" data-target="British-resident-no">
+              <input id="radio-british-resident" type="radio" name="radio-indent" value="No">
+              No
+            </label>
+
+            <div class="panel-indent js-hidden" id="British-resident-no">
+              <h2 class="heading-medium">
+                Your referees must be resident in Great Britain.
+              </h2>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <a href="name-date-of-birth" class="button">Continue</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/layout}}

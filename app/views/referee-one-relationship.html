@@ -1,0 +1,101 @@
+{{<layout}}
+
+{{$content}}
+<main id="content" role="main">
+  <a class="link-back" href="/examples/">Back to the GOV.UK prototype kit examples</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h1 class="heading-xlarge">
+          Check a person can <br> be a referee
+        </h1>
+
+        <p class="">
+          Local police knowing more about your referees means they can process your fire licence more quicker. Giving this information means less errors, which can delay decision to grant or refuse a licence.   
+        </p>
+
+        <!-- Known longer than two years? -->
+        <h2 class="heading-large">
+          Have you known your first referee longer than two years?
+        </h2>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">
+              Have you known your first referee longer than two years?
+            </legend>
+
+            <label class="block-label" for="radio-other-address" data-target="more-than-two-years">
+              <input id="radio-other-address" type="radio" name="radio-indent-group" value="Yes">
+              Yes
+            </label>
+
+            <div class="panel-indent js-hidden" id="more-than-two-years">
+              <label for="nationality_other_countries" class="form-label-bold">
+                How long have you known them? 
+              </label>
+              <p class="form-hint">For example, 4 years.</p>
+              <input class="form-control" type="text" id="nationality_other_countries">
+            </div>
+
+            <label class="block-label" for="radio-other-address" data-target="less-than-two-years">
+              <input id="radio-other-address" type="radio" name="radio-indent-group" value="No">
+              No
+            </label>
+
+            <div class="panel-indent js-hidden" id="less-than-two-years">
+              <h2 class="heading-medium">
+                Your referees must have known you personally for at least two years.
+              </h2>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <!-- British resident -->
+        <h2 class="heading-large">
+          Is your first referee resident in Great Britain?
+        </h2>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">
+              Is your first referee resident in Great Britain?
+            </legend>
+
+            <label class="block-label" for="radio-other-address" data-target="British-resident-yes">
+              <input id="radio-british-resident" type="radio" name="radio-indent" value="Yes">
+              Yes
+            </label>
+
+            <label class="block-label" for="radio-other-address" data-target="British-resident-no">
+              <input id="radio-british-resident" type="radio" name="radio-indent" value="No">
+              No
+            </label>
+
+            <div class="panel-indent js-hidden" id="British-resident-no">
+              <h2 class="heading-medium">
+                Your referees must be resident in Great Britain.
+              </h2>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <a href="referee-one-details" class="button">Continue</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/layout}}
