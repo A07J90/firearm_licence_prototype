@@ -1,4 +1,4 @@
-{{<layout}}
+{{<layout-agent}}
 
 {{$pageTitle}}Check your answers{{/pageTitle}}
 
@@ -37,6 +37,20 @@
              <span class="visuallyhidden">Site of export name</span>
           </a>
         </td>
+      </tr>
+      <tr>
+        <td>
+          Photograph
+        </td>
+        <td>
+          <img src="http://www.harrytrimble.co.uk/wp-content/uploads/passport.jpg" style="height:180px; width; 140px">
+        </td>
+        <td class="change-answer">
+          <a href="#">
+            <span class="visuallyhidden">Importer name</span>
+          </a>
+        </td>
+      </tr>
   		<tr>
   			<td>
   				Contact details
@@ -65,7 +79,7 @@
   			</td>
   			<td class="change-answer">
   				<a href="#">
-  					 <span class="visuallyhidden">Producer name</span>
+  					Book visit <span class="visuallyhidden">Producer name</span>
   				</a>
   			</td>
   		</tr>
@@ -124,31 +138,15 @@
       </tr>
   		<tr>
   			<td>
-  				Photograph
-  			</td>
-  			<td>
-  				<img src="http://www.harrytrimble.co.uk/wp-content/uploads/passport.jpg" style="height:180px; width; 140px">
-  			</td>
-  			<td class="change-answer">
-  				<a href="#">
-  					Change <span class="visuallyhidden">Importer name</span>
-  				</a>
-  			</td>
-  		</tr>
-  		<tr>
-  			<td>
   				GP / specialist
   			</td>
   			<td>
   				Dr Paula Simpson<br>
-          Station House Surgery<br>
-          Kendal<br>
-          Tel: 01539 722660<br>
-          Email: info@stationhousesurgery.nhs.uk
+          <span class="green-type">Contacted</span>
   			</td>
   			<td class="change-answer">
   				<a href="#">
-  					Change <span class="visuallyhidden">Recovery site name</span>
+  					view <span class="visuallyhidden">Recovery site name</span>
   				</a>
   			</td>
   		</tr>
@@ -161,7 +159,7 @@
         </td>
         <td class="change-answer">
           <a href="#">
-            Change <span class="visuallyhidden">Recovery facilities name</span>
+            view <span class="visuallyhidden">Recovery facilities name</span>
           </a>
         </td>
       </tr>
@@ -171,17 +169,11 @@
         </td>
         <td>
           Horace Slughorn<br>
-          Secondary school teacher<br>
-          Known for: 15 years<br>
-          80 Gillinggate<br>
-          Kendal<br>
-          LA9 3LL
-          Tel: 01539 722660<br>
-          Email: horaceslughorn12@hotmail.com
+          <span class="green-type">Contacted</span>
         </td>
         <td class="change-answer">
           <a href="#">
-            Change <span class="visuallyhidden">Recovery site name</span>
+            view <span class="visuallyhidden">Recovery site name</span>
           </a>
         </td>
       </tr>
@@ -191,17 +183,11 @@
         </td>
         <td>
           Bellatrix Lestrange<br>
-          Family friend<br>
-          Known for: 3 years<br>
-          Brigsteer House<br>
-          Kendal<br>
-          LA10 7HD<br>
-          Tel: 01539 765934<br>
-          Email: bellatraix@gmail.com
+          <span class="red-type">Need contacting</span>
         </td>
         <td class="change-answer">
           <a href="#">
-            Change <span class="visuallyhidden">Recovery site name</span>
+            Contact <span class="visuallyhidden">Recovery site name</span>
           </a>
         </td>
       </tr>
@@ -214,25 +200,53 @@
         </td>
         <td class="change-answer">
           <a href="#">
-            Change <span class="visuallyhidden">Recovery facilities name</span>
+             <span class="visuallyhidden">Recovery facilities name</span>
           </a>
         </td>
       </tr>
   	</tbody>
   </table>
 
-	<h2 class="heading-medium">Decision </h2>
+	<h2 class="heading-medium">Grant or refuse this person a firearm licence?</h2>
 
 	<p class="text">
-    By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.
-  </p>
+    
 
-	<div class="form-group">
-		<a href="confirmation-page" class="button">Accept and send application</a>
-	</div>
+    Given the evidence collected, is this person safe to possess and use the firearms, in line with the Firearms Act 1968.
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">
+              Do you live at the same address where the firearm would be stored?
+            </legend>
+
+            <label class="block-label" for="radio-home-address" >
+              <input id="radio-home-address" type="radio" name="radio-indent-group" value="Yes">
+              Grant
+            </label>
+
+            <label class="block-label" for="radio-other-address" data-target="example-other-address">
+              <input id="radio-other-address" type="radio" name="radio-indent-group" value="No">
+              Refuse
+            </label>
+
+          </fieldset>
+        </div>
+
+    <!-- Continue button -->
+    <div class="form-group">
+      <a href="referee-one-relationship" class="button" value="Continue" disabled="disabled">Continue</a>
+    </div>
+
+      </form>
+
+    </div>
+  </div>
+
 
 </main>
 
 {{/content}}
 
-{{/layout}}
+{{/layout-agent}}
