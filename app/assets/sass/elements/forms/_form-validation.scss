@@ -29,8 +29,9 @@
 .error-summary {
 
   // Add a red border to the left of the field
-  border-left: 4px solid $error-colour;
-  padding-left: 10px;
+  background-color: #F8F8F8;
+  border-left: 10px solid #DEE0E2;
+  padding-left: 0px;
 
   @include media(tablet) {
     border-left: 5px solid $error-colour;
@@ -52,7 +53,7 @@
 .error-summary {
 
   // Error summary has a border on all sides
-  border: 4px solid $error-colour;
+  border: 4px solid #DEE0E2;
 
   margin-top: $gutter-half;
   margin-bottom: $gutter-half;
@@ -92,12 +93,16 @@
 
       @include media(tablet) {
         margin-bottom: 5px;
+        font-size: 24px;
+        font-weight: bold;
       }
     }
 
     a {
-      color: $error-colour;
+      color: #0b0c0c;
+      font-size: 24px;
       font-weight: bold;
+      decoration:none;
       text-decoration: underline;
     }
   }

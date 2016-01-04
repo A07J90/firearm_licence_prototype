@@ -1,0 +1,40 @@
+{{<layout-agent}}
+
+{{$content}}
+<main id="content" role="main">
+
+  <form action="/" method="post" class="form">
+
+    <h1 class="form-title heading-xlarge">
+      Text verification 
+    </h1>
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+    <p>We've sent you a text message with a verification code</p>
+
+    <!-- Full name -->
+    <div class="form-group">
+      <label class="form-label" for="full-name">Enter verification code</label>
+      <!--
+      <p class="form-hint">As shown on your birth certificate or passport</p>
+      -->
+      <input type="text" class="form-control" id="full-name">
+      <a href="#"><p>I haven't recieved a text</p></a>
+    </div>
+
+      </div>
+    </div>
+
+    <div class="form-group">
+      <a href="police-cases" type="submit" class="button" value="Continue">Continue</a>
+    </div>
+
+
+  </form>
+
+</main>
+{{/content}}
+
+{{/layout-agent}}

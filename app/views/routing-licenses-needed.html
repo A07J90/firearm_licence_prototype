@@ -1,0 +1,96 @@
+{{<layout}}
+
+{{$pageTitle}}
+	GOV.UK payment page
+{{/pageTitle}}
+
+{{$content}}
+
+<style type="text/css">
+{{#hide_debitcard}}		#label-debitcard { display: none; }		{{/hide_debitcard}}
+{{#hide_creditcard}}	#label-creditcard { display: none; }	{{/hide_creditcard}}
+{{#hide_paypal}}		#label-paypal { display: none; }		{{/hide_paypal}}
+{{#hide_cash}}			#label-cash { display: none; }			{{/hide_cash}}
+{{#hide_directdebit}}	#label-directdebit { display: none; }	{{/hide_directdebit}}
+</style>
+
+<main id="content" role="main">
+	<div class="back">
+		<a href="javascript:history.back()">&#9664; Back</a>
+	</div>
+
+<!-- 
+Firearm licenses and prices
+http://www.scotland.police.uk/about-us/finance/service-fees-and-charges/firearms/
+ -->
+
+<div class="grid-row">
+	<div class="column-two-thirds">
+	  <h1 class="heading-large">You will need</h1>
+
+
+
+	  	<form class="radio-nav">
+			<div class="form-group">
+
+	<p>
+      Given the information you have provide, the licences you need are:
+    </p>	
+
+    <div class="grid-row">
+    <div class="column-two-thirds">
+				
+
+
+	    <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1" id="licence-border">
+
+	      <ul class="error-summary-list">
+	        <li class="">Firearm certificate</li>
+	      </ul>
+		</div>
+
+	    <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1" id="licence-border">
+
+	      <ul class="error-summary-list">
+	        <li class="">Shotgun cerificate</li>
+	      </ul>
+		</div>
+
+	    <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1" id="licence-border">
+
+	      <ul class="error-summary-list">
+	        <li class="">Visitors' permit</li>
+	      </ul>
+		</div>
+
+    </div>
+    </div>
+
+			
+			<div class="form-group"></div>
+			<div class="form-group">
+		 		<a href="#" class="button">Continue</a>
+		 	</div>
+		 </div>
+		</form>
+	   </div>
+	    <div class="column-third">
+
+			<div class="payment-summary-small">
+				<h2>Payment summary</h2>
+
+			      <p class="payment-info">Firearm licence application fee to Cumbria Police</p>
+			       <h3>Amount to pay:</h3>
+			       <p class="payment-amount"> £110.00 </p>
+			</div>
+		</div>
+	  </div>
+
+
+
+
+</main>
+
+{{/content}}
+
+{{/layout}}

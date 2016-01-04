@@ -1,0 +1,67 @@
+{{<layout}}
+
+{{$pageTitle}}Question page{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/start-page">Back</a>
+
+      <h2 class="heading-large">
+          How many people will be using your firearms?
+      </h2>
+
+      <p>These include employees, family members and customers.</p>
+
+      <form class="form">
+
+      <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">
+              How many people will be using your firearms?
+            </legend>
+
+            <label class="block-label" for="radio-home-address" >
+              <input id="radio-home-address" type="radio" name="radio-indent-group" value="Yes">
+              1
+            </label>
+
+            <label class="block-label" for="radio-home-address" >
+              <input id="radio-home-address" type="radio" name="radio-indent-group" value="Yes">
+              2-6
+            </label>
+
+            <label class="block-label" for="radio-other-address" data-target="example-other-address">
+              <input id="radio-other-address" type="radio" name="radio-indent-group" value="No">
+              7 or more
+            </label>
+
+            <div class="panel-indent js-hidden" id="example-other-address">
+
+              <h2 class="heading-medium">
+                No more than 6 people can use firearms under the care of a single licence holder.
+              </h2>
+              <p><a href="https://www.gov.uk/government/publications/air-weapons-a-brief-guide-to-safety-jan-2011">Learn more</a></p>
+            </div>
+          </fieldset>
+        </div>
+
+        <p></p>
+
+        <div class="form-group">
+          <a href="routing-licenses-needed" class="button">Continue</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{{/content}}
+
+{{/layout}}

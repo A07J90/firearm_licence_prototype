@@ -80,5 +80,23 @@
   color: #00823B;
 }
 
-// @import 'extras';
-// @import 'paypal';
+@import 'extras';
+@import 'paypal';
+
+#licence-border {
+  padding-left:none;
+  border-color: #DEE0E2;
+  color: #0b0c0c;
+}
+
+.police-office {
+  width: 120px;
+}
+
+.red-link a:link {
+    color: #B10E1E;
+}
+
+.appointment-box {
+  padding-bottom: 36px;
+}
